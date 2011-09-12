@@ -13,12 +13,29 @@
 		<filename module="mod_sobi2slideshow">mod_sobi2slideshow.php</filename>
 		<filename module="mod_sobi2slideshow">NivooSlider.css</filename>
 		<filename module="mod_sobi2slideshow">NivooSlider.js</filename>
-		
+		<filename module="mod_sobi2slideshow">images/arrow-right.png</filename>
+		<filename module="mod_sobi2slideshow">images/arrow-left.png</filename>
+		<filename module="mod_sobi2slideshow">images/indicator.gif</filename>
+
 	</files>
 	<params>
 	<param name="select_folder" type="text" default="images/stories" label="Enter the direct folder path. Please do not have a trailing slash '/' at the end. " description="The folder path to the images you would like to show in the slideshow. Please select the folder path with reference to your base directory." size="55" />
 	<param name="select_width" type="text" default="1000" label="Width of the slideshow" description="Enter the width (in pixels). Please do not add 'px' at the end. " size="55" />
 	<param name="select_height" type="text" default="500" label="Height of the slideshow" description="Enter the height (in pixels). Please do not add 'px' at the end." size="55" />
-	<param name="select_time" type="text" default="2000" label="Time of the slideshow in milliseconds" description="Enter the time in milliseconds. Please do not add 'ms' at the end." size="55" />
+	<param name="select_time" type="text" default="2000" label="Duration to show each image" description="Enter the time in milliseconds. Please do not add 'ms' at the end." size="55" />
+	<param name="select_animspeed" type="text" default="750" label="Duration of animation between to image" description="750 is a good number, only change if you think it is too slow / fast. Enter the time in milliseconds. Please do not add 'ms' at the end." size="55" />
+	<param name="select_orientation" type="list" default="" label="Select Orientation of the Transitions" description="">
+	<option value="horizontal">Horizontal</option>
+	<option value="vertical">Vertical</option>
+	<option value="random">Random</option>
+	</param>
+	
+		<param name="select_controls" type="list" default="" label="Do you want to show the Prev / Next Buttons" description="">
+	<option value="true">Show</option>
+	<option value="false">Hide</option>
+	</param>
+
+	
+	
 	</params>
 </install>
