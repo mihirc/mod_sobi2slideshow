@@ -10,6 +10,11 @@ $select_folder = $params->get( 'select_folder' );
 $select_height = $params->get( 'select_height'); 
 $select_width = $params->get('select_width');
 $select_time = $params->get('select_time');
+$select_animspeed = $params->get('select_animspeed');
+$select_autoplay = $params->get('select_autoplay');
+$select_orientation =$params->get('select_orientation');
+$select_controls = $params->get('select_controls');
+
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/modules/mod_sobi2slideshow/NivooSlider.css" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.2/mootools-yui-compressed.js"></script>
@@ -20,12 +25,13 @@ $select_time = $params->get('select_time');
         window.addEvent('domready',function(){
     // The more advanced way
     new NivooSlider($('Slider'), {
-        animSpeed: 750,
-        effect: 'sliceLeftRightDown',
+        animSpeed: <?php echo $select_animspeed; ?>,
+		directionNav:<?php echo $select_controls; ?>,
+        effect: 'fade',
         interval: <?php echo $select_time; ?>,
-        orientation: 'horizontal',
-        slices: 20,
-		directionNav:true
+        orientation: '<?php echo $select_orientation; ?>',
+        slices: 20
+		
     })
 
 });
