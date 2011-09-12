@@ -1,0 +1,24 @@
+<install version="1.5" type="module" client="site">
+	<name>SOBI2 Image Slider Module by MIhir Chhatre</name>
+	<author>Mihir Chhatre</author>
+	<creationDate>September 10, 2011</creationDate>
+	<copyright>© 2011 MIhir Chhatre.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>cmihirhere@gmail.com</authorEmail>
+	<authorUrl>http://www.thoughtfulviewfinder.in</authorUrl>
+	<version>1.0</version>
+	<description>SOBI2 Image Slidedhow, is a fully functional, feature rich slideshow module for SOBI2. This module picks up specific images from the base directory you define and allows you to add images for each category and entry. This makes it useful for people to display slideshows of any height, width and with quite a few transitions on any part of the page. This was specifically developed for a client who wanted an animated slideshow for each entry, without having to manually create a new entry everytime around. 
+	For any help, modifications, customization requests do get in touch with us on http://www.thoughtfulviewfinder.in</description>
+	<files>
+		<filename module="mod_sobi2slideshow">mod_sobi2slideshow.php</filename>
+		<filename module="mod_sobi2slideshow">NivooSlider.css</filename>
+		<filename module="mod_sobi2slideshow">NivooSlider.js</filename>
+		
+	</files>
+	<params>
+	<param name="select_folder" type="text" default="images/stories" label="Enter the direct folder path. Please do not have a trailing slash '/' at the end. " description="The folder path to the images you would like to show in the slideshow. Please select the folder path with reference to your base directory." size="55" />
+	<param name="select_width" type="text" default="1000" label="Width of the slideshow" description="Enter the width (in pixels). Please do not add 'px' at the end. " size="55" />
+	<param name="select_height" type="text" default="500" label="Height of the slideshow" description="Enter the height (in pixels). Please do not add 'px' at the end." size="55" />
+	<param name="select_time" type="text" default="2000" label="Time of the slideshow in milliseconds" description="Enter the time in milliseconds. Please do not add 'ms' at the end." size="55" />
+	</params>
+</install>
